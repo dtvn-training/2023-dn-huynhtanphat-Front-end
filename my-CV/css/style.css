@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    border: 0.125rem solid rgb(206, 197, 197);
+    padding: 1rem 2rem;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+hr {
+    border: 1px solid #067c6a;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.f_size16 {
+    font-size: 1rem;
+}
+
+.f_size25 {
+    font-size: 1.6rem;
+}
+
+.mr_top_10 {
+    margin-top: 10px;
+}
+
+.pd_left_20 {
+    padding-left: 20px;
+}
+
+.header_container {
+    width: 100%;
+    display: block;
+    /* padding: 10px 20px; */
+}
+
+.header_container .first_head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header_container .first_head .personal {
+    display: flex;
+    /* align-items: center; */
+
+}
+
+.header_container .first_head .personal .image_personal {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 1px solid rgb(171, 164, 164);
+    overflow: hidden;
+}
+
+.header_container .first_head .personal .image_personal img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header_container .first_head .personal .title_personal {
+    margin: 10px 0;
+}
+
+.header_container .first_head .personal .title_personal .postion {
+    color: #067c6a;
+}
+
+.header_container .first_head .contact ul li {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 10px 0;
+}
+
+.header_container .first_head .contact ul li span:first-child {
+    margin-right: 10px;
+}
+
+.header_container .first_head .contact ul li span:last-child {
+    color: #067c6a;
+}
+
+.header_container .second_head p {
+    line-height: 25px;
+}
+
+.body_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 10px; */
+}
+
+.body_container .first_body {
+    width: 47%;
+    float: left;
+    /* border: 1px solid red; */
+}
+
+.body_container .second_body {
+    width: 47%;
+    float: right;
+    /* border: 1px solid rgb(0, 255, 149); */
+}
+
+.block_body {
+    margin: 30px 0;
+    position: relative;
+}
+
+.first_body .block_body .boder_before::before {
+    position: absolute;
+    content: "";
+    border-left: 2px solid #067c6a;
+    width: 0px;
+    height: 320px;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+
+.desc h3 {
+    font-weight: 100;
+}
+
+.place_time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.place_time span,
+.body_container .second_body .block_body .projects span,
+.body_container .first_body .block_body .activities span {
+    color: #067c6a;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.detail_content {
+    position: relative;
+    padding: 10px;
+    margin-left: 20px;
+    border-left: 2px solid #067c6a;
+    border-right: 2px solid #067c6a;
+
+}
+
+.detail_content .l_1,
+.detail_content .l_2,
+.detail_content .r_1,
+.detail_content .r_2 {
+    position: absolute;
+    width: 10px;
+    border-top-width: 5px;
+    border-top: 2px solid #067c6a;
+}
+
+.l_1 {
+    top: 0;
+    left: 0;
+}
+
+.l_2 {
+    bottom: 0;
+    left: 0;
+}
+
+.r_1 {
+    top: 0;
+    right: 0;
+}
+
+.r_2 {
+    bottom: 0;
+    right: 0;
+}
+
+.detail_content span {
+    line-height: 25px;
+    /* letter-spacing: 0.4px; */
+}
+
+.body_container .first_body .block_body .hobbies {
+    display: flex;
+    margin: 5px 0;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.body_container .first_body .block_body .cycle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid #067c6a;
+    position: absolute;
+    margin-top: 5px;
+    /* margin-right: 10px; */
+    margin-left: -16px;
+}
+
+.body_container .first_body .block_body:nth-child(2) .cycle {
+    margin-top: -5px;
+}
+
+.body_container .first_body .block_body .hobbies .hobbies_cycle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid #067c6a;
+    margin-right: 10px !important;
+}
+
+.body_container .second_body .skills {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.body_container .second_body .skills button {
+    padding: 10px;
+    color: white;
+    background-color: #067c6a;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin: 0px 10px 10px 0px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.body_container .second_body .skills button:hover {
+    background-color: #04564a;
+}
+
+.body_container .second_body .block_body .projects,
+.body_container .first_body .block_body .activities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.body_container .second_body .block_body .languages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+}
+
+.star,
+.star1,
+.star2 {
+    background-color: rgb(122, 122, 118);
+    margin: 0 10px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.star:hover,
+.star1:hover,
+.star2:hover {
+    box-shadow: 0 0 5px #04564a;
+}
+
+.star.active,
+.star1.active,
+.star2.active {
+    background-color: #067c6a;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (min-width: 1601px) {
+
+    /* body{
+        width: 75%;
+    } */
+    .contact ul {
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 1601px) and (max-width: 1675px) {
+    .first_body .block_body .boder_before::before {
+        height: 345px;
+    }
+}
+
+
+/* 1300 -> 1600 */
+@media only screen and (min-width: 1300px) and (max-width: 1600px) {
+    body {
+        width: 75%;
+    }
+
+    .first_body .block_body .boder_before::before {
+        height: 270px;
+    }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1494px) {
+    .first_body .block_body .boder_before::before {
+        height: 295px;
+    }
+}
+
+@media only screen and (min-width: 1122px) and (max-width: 1300px) {
+    .first_body .block_body .boder_before::before {
+        height: 270px;
+    }
+}
+
+@media only screen and (min-width: 965px) and (max-width: 1121px) {
+    .first_body .block_body .boder_before::before {
+        height: 295px;
+    }
+}
+
+
+/* 768 -> 1299 */
+@media only screen and (min-width: 768px) and (max-width: 1299px) {
+    body {
+        width: 100%;
+    }
+
+    .contact ul {
+        text-align: right;
+    }
+
+    .header_container .first_head .personal .image_personal {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 837px) {
+    .first_body .block_body .boder_before::before {
+        height: 345px;
+    }
+}
+
+
+/* 0 -> 768 */
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        padding: 1rem 1rem;
+    }
+
+    .header_container .first_head .personal .image_personal {
+        width: 150px;
+        height: 150px;
+    }
+
+    .header_container .first_head {
+        display: block;
+        /* justify-content: space-between; */
+        margin-bottom: 20px;
+    }
+
+    .header_container .first_head .contact {
+        display: none;
+    }
+
+
+    .body_container {
+        display: grid;
+        width: 100%;
+    }
+
+    .body_container .first_body,
+    .body_container .second_body {
+        width: 100%;
+    }
+
+    .body_container .first_body .block_body .cycle {
+        display: none;
+    }
+
+    .first_body .block_body .boder_before::before {
+        display: none;
+    }
+
+    .title,
+    .desc,
+    .place_time {
+        padding: 0;
+    }
+
+    .detail_content {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .header_container .first_head .personal .image_personal {
+        width: 270px;
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 414px) {
+    .header_container .first_head .personal .image_personal {
+        width: 270px;
+        height: 180px;
+    }
+
+    .body_container .second_body .skills {
+        display: grid;
+        /* grid-template-columns: 1fr repeat(2, 60px); */
+    }
+
+    .body_container .second_body .skills button {
+        margin: 5px 0;
+        font-size: 20px;
+    }
+}
