@@ -282,9 +282,7 @@ a {
     justify-content: center;
 }
 
-.star,
-.star1,
-.star2 {
+.star {
     background-color: rgb(122, 122, 118);
     margin: 0 10px;
     width: 15px;
@@ -295,9 +293,7 @@ a {
     border-radius: 5px;
 }
 
-.star:hover,
-.star1:hover,
-.star2:hover {
+.star:hover {
     box-shadow: 0 0 5px #04564a;
 }
 
