@@ -89,13 +89,17 @@ a {
     color: #067c6a;
 }
 
+.header_container .first_head .contact ul {
+    line-height: 50px;
+}
+
 .header_container .first_head .contact ul li {
     text-decoration: none;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: end;
-    margin: 10px 0;
+    /* margin: 10px 0; */
 }
 
 .header_container .first_head .contact ul li span:first-child {
@@ -358,19 +362,26 @@ a {
         width: 100%;
     }
 
-    .contact ul {
+    /* .contact ul {
         text-align: right;
-    }
+    } */
 
-    .header_container .first_head .personal .image_personal {
+    /* .header_container .first_head .personal .image_personal {
         width: 150px;
         height: 150px;
-    }
+    } */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 837px) {
     .first_body .block_body .boder_before::before {
         height: 345px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 890px) {
+    .header_container .first_head .personal {
+        display: block;
+        /* align-items: center; */
     }
 }
 
@@ -382,9 +393,20 @@ a {
         padding: 1rem 1rem;
     }
 
+    .header_container .first_head .personal {
+        display: block;
+        /* align-items: center; */
+    }
+    
+
     .header_container .first_head .personal .image_personal {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
+        margin: 0px auto;
+    }
+
+    .header_container .first_head .personal .title_personal {
+        text-align: center;
     }
 
     .header_container .first_head {
@@ -427,19 +449,8 @@ a {
     }
 }
 
-@media only screen and (max-width: 375px) {
-    .header_container .first_head .personal .image_personal {
-        width: 270px;
-        height: 150px;
-    }
-}
 
 @media only screen and (min-width: 360px) and (max-width: 414px) {
-    .header_container .first_head .personal .image_personal {
-        width: 270px;
-        height: 180px;
-    }
-
     .body_container .second_body .skills {
         display: grid;
         /* grid-template-columns: 1fr repeat(2, 60px); */

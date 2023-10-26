@@ -19,10 +19,13 @@ star1.forEach((star, index) => {
 });
 
 const star2 = document.querySelectorAll(".star2");
-
+let index2;
 star2.forEach((star, index) => {
+  console.log(index);
   star.addEventListener("click", () => {
+    
     star2.forEach((star, index2) => {
+      console.log(index2.valueOf);
       index2 <= index ? star.classList.add("active") : star.classList.remove("active");
     });
   });
