@@ -301,9 +301,7 @@ a {
     box-shadow: 0 0 5px #04564a;
 }
 
-.star.active,
-.star1.active,
-.star2.active {
+.star.active {
     background-color: #067c6a;
 }
 
@@ -397,7 +395,7 @@ a {
         display: block;
         /* align-items: center; */
     }
-    
+
 
     .header_container .first_head .personal .image_personal {
         width: 200px;
